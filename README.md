@@ -24,7 +24,7 @@
 
 ## What Is AIXaaS™?
 
-**AI-as-a-Service (AIXaaS™)** is Inflexis's enterprise AI orchestration platform. It deploys in your Azure tenant, connects to your documents and operational data, and gives every role in your organization **governed, auditable AI access** — with a full change-control trail, role-based permissions, and zero IP exposure to third parties.
+**AI-as-a-Service (AIXaaS™)** is Inflexis's enterprise AI orchestration platform. It deploys in your tenant environment or can be hosted on ours as a iSaaS product, connects to your documents and operational data, and gives every role in your organization **governed, auditable AI access** — with a full change-control trail, role-based permissions, and zero IP exposure to third parties.
 
 Unlike a chatbot or a simple API wrapper, AIXaaS™ is a complete **orchestration system**:
 
