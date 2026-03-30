@@ -88,9 +88,9 @@ Every step is logged. Every agent instruction change is version-controlled. Ever
 <summary><strong>📊 System Topology</strong></summary>
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                         AIXaaS™ / MAO Platform                       │
-│                        Azure Container Apps                          │
+┌────────────────────────────────────────────────────────────────────┐
+│                         AIXaaS™ / MAO Platform                     │
+│                        Azure Container Apps                        │
 ├──────────────────┬──────────────────┬──────────────────────────────┤
 │  INGEST PIPELINE │  KNOWLEDGE BASE  │       AGENT LAYER            │
 │                  │                  │                              │
@@ -99,7 +99,7 @@ Every step is logged. Every agent instruction change is version-controlled. Ever
 │  YouTube  Web    │  T3: Pinecone    │  Meeting Intelligence        │
 │  Markdown  RTF   │  T4: Azure Search│  ADR Change Control          │
 │  CSV  JSON  HTML │                  │  Semantic Cache (30-60% ↓)   │
-│                  │  4-Tier Hybrid   │  Token Budget Guardrails      │
+│                  │  4-Tier Hybrid   │  Token Budget Guardrails     │
 │  → Parser Chain  │  BM25 + Vector   │  6-Tier Model Router         │
 │  → PII Mask      │  Always Warm     │  MCP Server (8 tools)        │
 │  → Comply Scan   │  Disk Persisted  │                              │
