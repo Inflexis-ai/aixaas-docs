@@ -123,9 +123,9 @@ All 23 detected via deterministic pattern matching — **no LLM call, no API cos
 
 <details>
 <summary><strong>👤 8-Role RBAC Role based controls with subagents ABAC governance </strong></summary>
-
-<br/>
 *Examples*
+<br/>
+
 | Role | Min LLM Tier | Namespace Access | Use Case |
 |---|---|---|---|
 | `admin` | Tier 3 | All | Full platform control, ADR approvals |
