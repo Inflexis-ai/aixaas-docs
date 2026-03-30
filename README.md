@@ -122,10 +122,10 @@ All 23 detected via deterministic pattern matching — **no LLM call, no API cos
 </details>
 
 <details>
-<summary><strong>👤 8-Role RBAC</strong></summary>
+<summary><strong>👤 8-Role RBAC Role based controls with subagents ABAC governance </strong></summary>
 
 <br/>
-
+*Examples*
 | Role | Min LLM Tier | Namespace Access | Use Case |
 |---|---|---|---|
 | `admin` | Tier 3 | All | Full platform control, ADR approvals |
@@ -135,7 +135,7 @@ All 23 detected via deterministic pattern matching — **no LLM call, no API cos
 | `developer` | Tier 2 | Technical + docs | API, codebase, documentation |
 | `member` | Tier 1 | General | Standard knowledge base access |
 | `client` | Tier 2 | Own namespace only | Isolated client data |
-| `demo` | Tier 1 | Sandbox only | Demo environment, no production data |
+| `Prospects` | Tier 1 | Sandbox only | Demo environment, no production data |
 
 </details>
 
