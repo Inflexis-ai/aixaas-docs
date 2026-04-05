@@ -18,12 +18,12 @@ This is not a pattern borrowed from AI research — it is borrowed from the Fede
 │  │                        FastAPI Application                      │   │
 │  │                                                                 │   │
 │  │  ┌──────────────┐  ┌──────────────┐  ┌────────────────────┐     │   │
-│  │  │  /api/ingest  │ │  /api/chat   │  │  /api/admin        │     │   │
-│  │  │  /api/ingest  │ │  /api/chat   │  │  /api/meetings     │     │   │
-│  │  │  /api/ingest  │ │  /api/status │  │  /auth/*           │     │   │
-│  │  └──────┬────────┘ └──────┬───────┘  └────────┬───────────┘     │   │
+│  │  │  /api/ingest │  │  /api/chat   │  │  /api/admin        │     │   │
+│  │  │  /api/ingest │  │  /api/chat   │  │  /api/meetings     │     │   │
+│  │  │  /api/ingest │  │  /api/status │  │  /auth/*           │     │   │
+│  │  └──────┬───────┘  └──────┬───────┘  └────────┬───────────┘     │   │
 │  │         │                 │                   │                 │   │
-│  │  ┌──────▼──────────────────▼────────────────────▼───────────┐   │   │
+│  │  ┌──────▼─────────────────▼──────────────────▼──────────────┐   │   │
 │  │  │                    Core Modules                          │   │   │
 │  │  │  Universal Ingestor · Compliance Engine · Model Router   │   │   │
 │  │  │  ADR Logger · Archive Manager · Semantic Cache           │   │   │
