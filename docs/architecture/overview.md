@@ -11,38 +11,38 @@ This is not a pattern borrowed from AI research — it is borrowed from the Fede
 ## System Topology
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                           Azure Container Apps                           │
-│                                                                         │
+┌────────────────────────────────────────────────────────────────────────┐
+│                           Azure Container Apps                         │
+│                                                                        │
 │  ┌─────────────────────────────────────────────────────────────────┐   │
-│  │                        FastAPI Application                       │   │
-│  │                                                                  │   │
-│  │  ┌──────────────┐  ┌──────────────┐  ┌────────────────────┐   │   │
-│  │  │  /api/ingest  │  │  /api/chat   │  │  /api/admin        │   │   │
-│  │  │  /api/ingest  │  │  /api/chat   │  │  /api/meetings     │   │   │
-│  │  │  /api/ingest  │  │  /api/status │  │  /auth/*           │   │   │
-│  │  └──────┬────────┘  └──────┬───────┘  └────────┬───────────┘   │   │
-│  │         │                  │                    │               │   │
-│  │  ┌──────▼──────────────────▼────────────────────▼───────────┐  │   │
-│  │  │                    Core Modules                            │  │   │
-│  │  │  Universal Ingestor · Compliance Engine · Model Router    │  │   │
-│  │  │  ADR Logger · Archive Manager · Semantic Cache            │  │   │
-│  │  │  User Context · Prompt Composer · Guardrails              │  │   │
-│  │  │  Meeting Intelligence · PII Trust Layer                   │  │   │
-│  │  └──────────────────────────┬────────────────────────────────┘  │   │
-│  │                             │                                    │   │
+│  │                        FastAPI Application                      │   │
+│  │                                                                 │   │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌────────────────────┐     │   │
+│  │  │  /api/ingest  │ │  /api/chat   │  │  /api/admin        │     │   │
+│  │  │  /api/ingest  │ │  /api/chat   │  │  /api/meetings     │     │   │
+│  │  │  /api/ingest  │ │  /api/status │  │  /auth/*           │     │   │
+│  │  └──────┬────────┘ └──────┬───────┘  └────────┬───────────┘     │   │
+│  │         │                 │                   │                 │   │
+│  │  ┌──────▼──────────────────▼────────────────────▼───────────┐   │   │
+│  │  │                    Core Modules                          │   │   │
+│  │  │  Universal Ingestor · Compliance Engine · Model Router   │   │   │
+│  │  │  ADR Logger · Archive Manager · Semantic Cache           │   │   │
+│  │  │  User Context · Prompt Composer · Guardrails             │   │   │
+│  │  │  Meeting Intelligence · PII Trust Layer                  │   │   │
+│  │  └──────────────────────────┬───────────────────────────────┘   │   │
+│  │                             │                                   │   │
 │  │  ┌──────────────────────────▼────────────────────────────────┐  │   │
-│  │  │                   Storage Layer (4-Tier)                   │  │   │
+│  │  │                   Storage Layer (4-Tier)                  │  │   │
 │  │  │  T1: Keyword/disk   T2: Qdrant   T3: Pinecone   T4: Azure │  │   │
 │  │  └───────────────────────────────────────────────────────────┘  │   │
 │  └─────────────────────────────────────────────────────────────────┘   │
-│                                                                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌───────────┐  │
-│  │  Key Vault   │  │  AI Search   │  │ Blob Storage  │  │  Entra ID │  │
-│  │  (secrets)   │  │  (production │  │  (archive +   │  │  (SSO +   │  │
-│  │              │  │   vector KB) │  │   recordings) │  │   RBAC)   │  │
-│  └──────────────┘  └──────────────┘  └──────────────┘  └───────────┘  │
-└─────────────────────────────────────────────────────────────────────────┘
+│                                                                        │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌───────────┐   │
+│  │  Key Vault   │  │  AI Search   │  │ Blob Storage │  │  Entra ID │   │
+│  │  (secrets)   │  │  (production │  │  (archive +  │  │  (SSO +   │   │
+│  │              │  │   vector KB) │  │   recordings │  │   RBAC)   │   │
+│  └──────────────┘  └──────────────┘  └──────────────┘  └───────────┘   │
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
